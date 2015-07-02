@@ -4,7 +4,7 @@
   "description": "Angularjs directive that enables slim scrollbar with CSS customization",
   "main": [
     "ng-slim-scroll.js",
-    "ng-slim-scroll.css",
+    "ng-slim-scroll.css"
   ],
   "keywords": [
     "Angularjs",
