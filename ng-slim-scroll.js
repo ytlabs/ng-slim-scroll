@@ -4,7 +4,7 @@
  * https://github.com/kamlekar/slim-scroll
  */
 
-angular.module('ng-slim-scroll', [])
+angular.module('ngSlimScroll', [])
     .directive('slimScroll', ['$window', '$document', '$timeout', function ($window, $document, $timeout) {
         var init_attribute = "data-slim-scroll-init";
         var defaults = {
@@ -18,17 +18,18 @@ angular.module('ng-slim-scroll', [])
             restrict: 'A',
             transclude: true,
             replace: true,
+            scope: {options: '='},
             template: '<div><div class="slim-scroll-wrapper" data-ng-transclude></div></div>',
             link: function ($scope, element) {
                 element.removeAttr(init_attribute);
 
+                var options = angular.extend({}, defaults, $scope.options);
                 //continue once DOM is ready
                 $timeout(function () {
                     var wrapperDomElement = element.children()[0],
                         wrapperElement = angular.element(wrapperDomElement);
                     if (wrapperDomElement.offsetHeight < wrapperDomElement.scrollHeight) {
                         element.attr(init_attribute, '1');
-                        var options = angular.extend({}, defaults, element.data('options'));
                         wrapperElement.addClass(options.wrapperClass);
 
                         //create scrollbar container
@@ -106,6 +107,8 @@ angular.module('ng-slim-scroll', [])
                                 values.firstY = e.pageY || event.clientY;
                                 if (!values.reposition)
                                     values.reposition = getReposition(values.height);
+
+                                wrapperElement.addClass('unselectable');
                             },
                             moveScroll = function (e) {
                                 e = e || event;
@@ -128,6 +131,7 @@ angular.module('ng-slim-scroll', [])
                                 $document.unbind('mouseup', endScroll);
 
                                 values.reposition = 0;
+                                wrapperElement.removeClass('unselectable');
                                 scrollbarContainerElement.addClass(options.specialClass);
                             },
                             doScroll = function (e) {
@@ -138,7 +142,7 @@ angular.module('ng-slim-scroll', [])
                             };
 
                         if (options.keepFocus) {
-                            wrapperElement.setAttr('tabindex', '-1');
+                            wrapperElement.attr('tabindex', '-1');
                             wrapperDomElement.focus();
                         }
 

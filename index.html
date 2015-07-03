@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ytlabs ngSlimScroll Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Bootstrap core CSS -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"
+          media="screen">
+    <link href="ng-slim-scroll.css" rel="stylesheet">
+    <style>
+        body {
+            padding-bottom: 100px;
+        }
+        div[slim-scroll] {
+            height: 280px;
+        }
+        div.slim-scroll-wrapper {
+            padding-right: 20px !important;
+        }
+        div.row {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <h1>ngSlimScroll Demo Page</h1>
+
+        <p>This page demonstrates how ngSlimScroll looks like.</p>
+        <p>ngSlimScroll is AngularJS adaptation of <a href="https://github.com/venkateshwar/slim-scroll/" target="_blank">kamlekar's slim-scroll</a></p>
+
+        <div>
+            <iframe src="https://ghbtns.com/github-btn.html?user=ytlabs&repo=ng-slim-scroll&type=fork&size=large"
+                    frameborder="0" scrolling="0" width="80px" height="30px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=ytlabs&repo=ng-slim-scroll&type=star&size=large"
+                    frameborder="0" scrolling="0" width="75px" height="30px"></iframe>
+            <iframe src="https://ghbtns.com/github-btn.html?user=ytlabs&type=follow&size=large" frameborder="0"
+                    scrolling="0" width="170px" height="30px"></iframe>
+        </div>
+    </div>
+</div>
+<div class="container" ng-app="myApp">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h3>Mehlika Sultan</h3>
+
+            <div slim-scroll>
+                <p>
+                    Mehlika Sultan'a âşık yedi genç<br>
+                    Gece şehrin kapısından çıktı:<br>
+                    Mehlika Sultan'a âşık yedi genç<br>
+                    Kara sevdalı birer âşıktı.
+                </p>
+
+                <p>
+                    Bir hayâlet gibi dünya güzeli<br>
+                    Girdiğinden beri rü'yâlarına;<br>
+                    Hepsi meshûr, o muammâ güzeli<br>
+                    Gittiler görmeye Kaf dağlarına.
+                </p>
+
+                <p>
+                    Hepsi, sırtında aba, günlerce<br>
+                    Gittiler içleri hicranla dolu;<br>
+                    Her günün ufkunu sardıkça gece<br>
+                    Dediler: ''Belki bu son akşamdır''
+                </p>
+
+                <p>
+                    Bu emel gurbetinin yoktur ucu;<br>
+                    Daimâ yollar uzar, kalp üzülür:<br>
+                    Ömrü oldukça yürür her yolcu,<br>
+                    Varmadan menzile bir yerde ölür.
+                </p>
+
+                <p>
+                    Mehlika'nın kara sevdalıları<br>
+                    Vardılar çıkrığı yok bir kuyuya,<br>
+                    Mehlika'nın kara sevdalıları<br>
+                    Baktılar korkulu gözlerle suya.
+                </p>
+
+                <p>
+                    Gördüler: ''Aynada bir gizli cihân..<br>
+                    Ufku çepçevre ölüm servileri.....''<br>
+                    Sandılar doğdu içinden bir ân<br>
+                    O, uzun gözlü, uzun saçlı peri.
+                </p>
+
+                <p>
+                    Bu hâzin yolcuların en küçüğü<br>
+                    Bir zaman baktı o viran kuyuya.<br>
+                    Ve neden sonra gümüş bir yüzüğü<br>
+                    Parmağından sıyırıp attı suya.
+                </p>
+
+                <p>
+                    Su çekilmiş gibi rü'yâ oldu!..<br>
+                    Erdiler yolculuğun son demine;<br>
+                    Bir hayâl âlemi peydâ oldu<br>
+                    Göçtüler hep o hayâl âlemine.
+                </p>
+
+                <p>
+                    Mehlika Sultan'a âşık yedi genç<br>
+                    Seneler geçti, henüz gelmediler;<br>
+                    Mehlika Sultan'a âşık yedi genç<br>
+                    Oradan gelmeyecekmiş dediler!..
+                </p>
+
+                <p class="text-right">
+                    <i>Yahya Kemal Beyatlı</i>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <p>Slim scroll instance below, uses 'mac-style' class as an example for CSS Styling. mac-style class is included in directive's css file.</p>
+            <h3>O Zaman Av Bitti</h3>
+
+            <div slim-scroll class="mac-style" data-options="{'keepFocus': true}">
+                <p>
+                    öyle çalıştılar ki bir kadını hak ettiler şuralarda buralarda<br>
+                    sıcağıyla bir kadını, elleri ayakları doğurganlığıyla tenha<br>
+                    kadınlar bütün güçlerin vardığı, yeniden bir baktığımız<br>
+                    dünyaya<br>
+                    bütün arabaları iten bütün güneşleri getiren ahşap konaklara<br>
+                    durduğu yerde besleyici, kendine yeten, haydi dedirten hep<br>
+                    adamlara<br>
+                    merdivenler güzel oldu, masalar pek uygun, sevgiyle baktılar<br>
+                    parlayan ışıklara<br>
+                    nasıl köpüren sabunlarımıza nasıl yerli yerinde aynalara
+                </p>
+                <p>
+                    eksikli penceresiz su içinde adamlar<br>
+                    tükenik adamlar gecede kente başladılar
+                </p>
+
+                <p>
+                    güç güç dayanırlardı erkekler, kadınların kendisi olmasa<br>
+                    yürekler dayanmalar, küçük küçük yumurtalar dökülürdü sokaklara<br>
+                    ama ona akşam mı demeli öyle, karasız dağsız hele eşkıyalar<br>
+                    inmemişse yollara<br>
+                    hani dağdan inmiş herifler biri bıyıklı öbürü daha daha<br>
+                    korkudan bir türlü doğal anlam katan tıkalı yaşamalara<br>
+                    göğüslere kulak memelerine lavanta çiçeği kokutmakla<br>
+                    akşam mı denir ara sokaklarda pis lokantalara
+                </p>
+
+                <p>
+                    bir otçuk olmayınca çayırdan bir göz seğirtmeyince balıktan<br>
+                    akşam mı denir yükselen küflü kentli buğuya kalabalıktan<br>
+                </p>
+
+                <p>
+                    ama bardaklar yıkanır daha<br>
+                    gazeteler birden eskir yorgun sebzeler sulanır tabaklarda<br>
+                    adamın biri dalar şarap der öbürü girer o daha<br>
+                    akşam derler kadınlar erkekler doluşurlar yataklara
+                </p>
+
+                <p>
+                    yorgunlar tükenmezkalemleri tüketirler kaygılarından<br>
+                    susarlar yazmazlar kırk odalı evlerde artık akşama<br>
+                    saygılarından
+                </p>
+
+                <p>
+                    bunlar kimin kovaladığı sürüler böyle kaçmasız dünyalarda<br>
+                    dalyanlar dolup dolup boşaldıkça dip sularıyla<br>
+                    ormanları boşaltan önüne durulmaz telaşla<br>
+                    en güzel şeye en yakın, birden o kadar uzak dağınık sayfalarda<br>
+                    kolalı yakalarda dimdik, yağlarda kaygan bütün gün<br>
+                    kuytularda<br>
+                    alıp gittikleri sabun bulup döndükleri köpük ne fayda<br>
+                    düzen içinde ölü, huysuz alıngan düzen dışında<br>
+                    onlar yalın onlar bir örnek onlar yalnız satırbaşlarında<br>
+                    kadınlar olmasa güç dayanırlar tuğlalara kâğıtlara<br>
+                    deniz-gök uyumuna<br>
+                    kadınları düşünmeyin, durmadan alışverişte onlar<br>
+                    dayanıklı tanrılarla<br>
+                    karasız dağsız hiç kimsenin aklına filistin milistin<br>
+                    düşmeden daha<br>
+                    akşam derler kadınlar erkekler doluşurlar yataklara
+                </p>
+
+                <p>
+                    su tükenir güneş bilinir el sevilir<br>
+                    kaçılır yüzyıllık avcılardan evlere girilir
+                </p>
+
+                <p>
+                    akşam dediler gökyüzü diyenleri doğruladı<br>
+                    büyük kapılı evlere koşuştuk<br>
+                    o yorgun o tükenmez merdivenler saatinde<br>
+                    neyimiz varsa balıktan değil neyimiz varsa tütünden<br>
+                    kalabalığı silkeledik üstümüzden geceyi buyurduk
+                </p>
+
+                <p>
+                    o zaman sis bastı, suları durdurduk, kurtulduk.<br>
+                    susamlı bitkileri, pencereleri düşündük umutlandık. iyi ki gece vardı. alıp başını gelmiş yılkıları
+                    kuytulara sürdük. bütün balıklar ürktüler.
+                </p>
+
+                <p>
+                    bir yabanlık vardı tüfeklerimizde. kadınlar atlarının üstünde<br>
+                    şapkalarının alımlı tüylerini ellediler.
+                </p>
+
+                <p>
+                    dizlerimiz sulardan akıyordu. ama ne atlardı. doru donlarına am kesmesi yeleler. aynı at üstünde hem
+                    kaçıyor hem kovalıyorduk kendimizi. vurulan bir karacanın hayvansı sesi duyurdu kendini herkese.
+                    irkilmez miydik?
+                </p>
+
+                <p>
+                    o zaman kadınlar gizliden göğüslerini ellediler. güçlerinden gönendiler. bu yetti onlara. ağ
+                    sallandı, balık vurdu. tavşanların ot kesen ön dişleri durdu. kuşlar açıldı. torbalar kana belendi.
+                    ormanı bozduk.
+                </p>
+
+                <p>
+                    sağır kadınlar denize karşı konuştular.<br>
+                    köşebaşlarında bakışlar kaldı. adamlar kaçıştı heryerlerden.<br>
+                    av bitti. ormanı boşalttılar. gelip dinlendiler.<br>
+                    uzun parklarda tükenmemiş geyik yoktu bugünlük.
+                </p>
+
+                <p>
+                    adamların bakmasiyle birden dirildi, güzelleşti, güçlendi kadınların saçları. kadın kadın ısındılar,
+                    güvendiler, yörelerine bakıp gülümsediler hatta. kimi “ha evet” dediler. gerektiklerini bilmektendi
+                    onların güçleri.
+                </p>
+
+                <p>
+                    sonradan en güzel unuttukları olacak anları dolduruyorlardı.
+                </p>
+
+                <p>
+                    sözlerin sözlerin dayanılmaz kösnüsü idi artık bizi buraya<br>
+                    çekip getiren, konuşmak konuşmak…
+                </p>
+
+                <p>
+                    avdan ve ateşten…<br>
+                    ve her şeyden…<br>
+
+                <p class="text-right">
+                    <i>Turgut Uyar</i>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="ng-slim-scroll.js"></script>
+<script>
+    var app = angular.module('myApp', ['ngSlimScroll']);
+</script>
+</body>
+</html>

@@ -6,9 +6,16 @@
     overflow: auto !important;
     left: 0;
     top: 0 !important;
-    right:-18px;
-    bottom:0 !important;
-    padding-right: 8px !important;
+    right: -18px;
+    bottom: 0 !important;
+    padding-right: 8px;
+    &.unselectable {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: -moz-none;
+      -o-user-select: none;
+      user-select: none;
+    }
     + div {
       position: absolute !important;
       top: 0 !important;
@@ -30,9 +37,6 @@
   &.mac-style {
     border: 1px solid #CCC;
     margin-top: 20px;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
     > div {
       padding: 5px;
       + div {

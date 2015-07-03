@@ -1,8 +1,12 @@
 ## ng-slim-scroll
 
-This project is AngularJS adoptation of [kamlekar's slim-scroll](https://github.com/venkateshwar/slim-scroll/) ,
+This project is AngularJS adaptation of [kamlekar's slim-scroll](https://github.com/venkateshwar/slim-scroll/) ,
 
 All credits goes to [kamlekar](https://github.com/kamlekar). I have just tried to reimplement its work in angularjs.
+
+## Demo
+
+`demo.html` file contains example usage. [View demo](https://rawgit.com/ytlabs/ng-slim-scroll/master/index.html)
 
 ## Installation
 
