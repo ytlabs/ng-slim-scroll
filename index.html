@@ -21,6 +21,12 @@
         div.row {
             margin-bottom: 40px;
         }
+        div.box {
+            border: 1px solid #CCC;
+        }
+        div.box div {
+          padding: 5px;
+        }
     </style>
 </head>
 <body>
@@ -248,13 +254,63 @@
                 <p>
                     avdan ve ateşten…<br>
                     ve her şeyden…<br>
-
+                </p>
                 <p class="text-right">
                     <i>Turgut Uyar</i>
                 </p>
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <p>You can adjust the rendering time with the delay option.  The default is 100ms.</p>
+            <h3>O Zaman Av Bitti</h3>
+
+            <div slim-scroll class="mac-style box" data-options="{delay: 40}">
+                <p ng-repeat="a in [0,1,2,3,4,5,6,7,8,9,10]">
+                    öyle çalıştılar ki bir kadını hak ettiler şuralarda buralarda<br>
+                    sıcağıyla bir kadını, elleri ayakları doğurganlığıyla tenha<br>
+                    kadınlar bütün güçlerin vardığı, yeniden bir baktığımız<br>
+                    dünyaya<br>
+                    bütün arabaları iten bütün güneşleri getiren ahşap konaklara<br>
+                    durduğu yerde besleyici, kendine yeten, haydi dedirten hep<br>
+                    adamlara<br>
+                    merdivenler güzel oldu, masalar pek uygun, sevgiyle baktılar<br>
+                    parlayan ışıklara<br>
+                    nasıl köpüren sabunlarımıza nasıl yerli yerinde aynalara
+                </p>
+
+                <p class="text-right">
+                    <i>Turgut Uyar</i>
+                </p>
+            </div>
+
+            <br/>
+            <p>If the height is less than the box</p>
+            <div slim-scroll class="mac-style box" data-options="{delay: 40}">
+                <p ng-repeat="a in [0]">
+                    öyle çalıştılar ki bir kadını hak ettiler şuralarda buralarda<br>
+                    sıcağıyla bir kadını, elleri ayakları doğurganlığıyla tenha<br>
+                    kadınlar bütün güçlerin vardığı, yeniden bir baktığımız<br>
+                    dünyaya<br>
+                    bütün arabaları iten bütün güneşleri getiren ahşap konaklara<br>
+                    durduğu yerde besleyici, kendine yeten, haydi dedirten hep<br>
+                    adamlara<br>
+                    merdivenler güzel oldu, masalar pek uygun, sevgiyle baktılar<br>
+                    parlayan ışıklara<br>
+                    nasıl köpüren sabunlarımıza nasıl yerli yerinde aynalara
+                </p>
+
+                <p class="text-right">
+                    <i>Turgut Uyar</i>
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
