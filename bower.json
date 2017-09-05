@@ -1,0 +1,26 @@
+{
+  "name": "ng-slim-scroll",
+  "version": "0.2.2",
+  "description": "Angularjs directive that enables slim scrollbar with CSS customization",
+  "main": [
+    "ng-slim-scroll.js",
+    "ng-slim-scroll.css"
+  ],
+  "keywords": [
+    "Angularjs",
+    "scrollbar",
+    "slim scroll"
+  ],
+  "author": {
+    "name": "Kamil Sulubulut",
+    "url": "http://github.com/kokeksibir/"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

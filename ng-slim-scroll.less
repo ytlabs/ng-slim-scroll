@@ -1,0 +1,56 @@
+[slim-scroll], [data-slim-scroll] {
+  position: relative;
+  overflow: hidden;
+  > div {
+    position: absolute !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    left: 0;
+    top: 0 !important;
+    bottom: 0 !important;
+    &.unselectable {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: -moz-none;
+      -o-user-select: none;
+      user-select: none;
+    }
+    + div {
+      position: absolute !important;
+      top: 0 !important;
+      bottom: 0 !important;
+      right: 0;
+      left: auto;
+      width: 5px;
+      cursor: pointer !important;
+      padding-right: 0 !important;
+      > div {
+        position: absolute !important;
+        background-color: #999;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+  &.mac-style {
+    > div {
+      + div {
+        background-color: transparent;
+        > div {
+          border-radius: 10px;
+        }
+        &.animate > div {
+          transition: 2s opacity ease;
+          -ms-transition: 2s opacity ease;
+          opacity: 0;
+        }
+        &:hover > div {
+          opacity: 0.5;
+          transition: none;
+          -ms-transition: none;
+        }
+      }
+    }
+  }
+}
